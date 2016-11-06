@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2016 10:49:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="TicketOrder.Timetrain" table="timetrain" catalog="trainticket" optimistic-lock="version">
+        <id name="timeId" type="int">
+            <column name="TimeID" />
+            <generator class="assigned" />
+        </id>
+        <property name="trainId" type="int">
+            <column name="TrainID" not-null="true" />
+        </property>
+        <property name="price" type="int">
+            <column name="Price" not-null="true" />
+        </property>
+        <property name="provice" type="string">
+            <column name="Provice" length="200" not-null="true" />
+        </property>
+        <property name="dateTrain" type="string">
+            <column name="DateTrain" length="20" />
+        </property>
+        <property name="timeTrain" type="string">
+            <column name="TimeTrain" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

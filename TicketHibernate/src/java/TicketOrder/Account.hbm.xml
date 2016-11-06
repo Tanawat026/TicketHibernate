@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2016 10:49:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="TicketOrder.Account" table="account" catalog="trainticket" optimistic-lock="version">
+        <id name="actId" type="int">
+            <column name="ActID" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="Username" length="25" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="25" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="Name" length="55" not-null="true" />
+        </property>
+        <property name="tel" type="string">
+            <column name="Tel" length="15" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

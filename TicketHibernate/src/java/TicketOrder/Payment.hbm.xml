@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2016 10:49:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="TicketOrder.Payment" table="payment" catalog="trainticket" optimistic-lock="version">
+        <id name="paymentId" type="int">
+            <column name="PaymentID" />
+            <generator class="assigned" />
+        </id>
+        <property name="nameVisa" type="string">
+            <column name="NameVISA" length="20" not-null="true" />
+        </property>
+        <property name="numberVisa" type="string">
+            <column name="NumberVISA" length="20" not-null="true" />
+        </property>
+        <property name="monthExpired" type="string">
+            <column name="MonthExpired" length="2" not-null="true" />
+        </property>
+        <property name="yearExpired" type="string">
+            <column name="YearExpired" length="4" not-null="true" />
+        </property>
+        <property name="pin" type="string">
+            <column name="Pin" length="3" not-null="true" />
+        </property>
+        <property name="priceAll" type="int">
+            <column name="PriceAll" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

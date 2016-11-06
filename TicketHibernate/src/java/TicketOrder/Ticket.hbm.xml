@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2016 10:49:22 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="TicketOrder.Ticket" table="ticket" catalog="trainticket" optimistic-lock="version">
+        <id name="ticketId" type="int">
+            <column name="TicketID" />
+            <generator class="assigned" />
+        </id>
+        <property name="timeId" type="int">
+            <column name="TimeID" not-null="true" />
+        </property>
+        <property name="actId" type="int">
+            <column name="ActID" not-null="true" />
+        </property>
+        <property name="origin" type="string">
+            <column name="Origin" length="20" not-null="true" />
+        </property>
+        <property name="destination" type="string">
+            <column name="Destination" length="20" not-null="true" />
+        </property>
+        <property name="dateBuyTicket" type="string">
+            <column name="DateBuyTicket" length="25" not-null="true" />
+        </property>
+        <property name="numPsg" type="int">
+            <column name="NumPsg" not-null="true" />
+        </property>
+        <property name="pricePerSeat" type="int">
+            <column name="PricePerSeat" not-null="true" />
+        </property>
+        <property name="paymentId" type="int">
+            <column name="PaymentID" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
