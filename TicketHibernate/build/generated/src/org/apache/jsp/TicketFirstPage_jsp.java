@@ -42,33 +42,33 @@ public final class TicketFirstPage_jsp extends org.apache.jasper.runtime.HttpJsp
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"Theme/css/bootstrap.min.css\">\n");
-      out.write("        <link rel=\"stylesheet\" href=\"style.css\">\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Ticket Management System</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body bgcolor ='#F2F3F4' ><center>\n");
-      out.write("        <h1>Ticket Management System </h1><br>\n");
-      out.write("        <a href=\"TicketInsert.jsp\" class=\"btn btn-default btn-lg active\">Add new Ticket</a>&nbsp;&nbsp;&nbsp;\n");
-      out.write("        <a href=\"ListController\" class=\"btn btn-default btn-lg active\">Ticket List</a> <br>\n");
-      out.write("            <br/>\n");
-      out.write("            <h2>Search Your Ticket</h2><br>\n");
-      out.write("            <form class=\"form-inline\" name=\"searchForm\" action=\"SearchController\">\n");
-      out.write("                Enter Ticket Number :<input type=\"text\" class=\"form-control\"  name=\"searchValue\" value=\"\" >\n");
-      out.write("                <input type=\"submit\" class=\"btn btn-primary\" value=\"Find Ticket Details\" name=\"searchButton\" />\n");
-      out.write("            </form><br>\n");
-      out.write("               <form class=\"form-inline\" name=\"searchForm\" action=\"SearchTextController\">\n");
-      out.write("                Enter Province :<input type=\"text\" class=\"form-control\"  name=\"searchValue\" value=\"\" >\n");
-      out.write("                <input type=\"submit\" class=\"btn btn-primary\"  value=\"Find Provice\" name=\"searchButton\" />\n");
-      out.write("            </form>\n");
-      out.write("            <br>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"Theme/css/bootstrap.min.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"style.css\">\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>Ticket Management System</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body bgcolor ='#F2F3F4' ><center>\r\n");
+      out.write("        <h1>Ticket Management System </h1><br>\r\n");
+      out.write("        <a href=\"TicketInsert.jsp\" class=\"btn btn-default btn-lg active\">Add new Ticket</a>&nbsp;&nbsp;&nbsp;\r\n");
+      out.write("        <a href=\"ListController\" class=\"btn btn-default btn-lg active\">Ticket List</a> <br>\r\n");
+      out.write("            <br/>\r\n");
+      out.write("            <h2>Search Your Ticket</h2><br>\r\n");
+      out.write("            <form class=\"form-inline\" name=\"searchForm\" action=\"SearchController\">\r\n");
+      out.write("                Enter Ticket Number :<input type=\"text\" class=\"form-control\"  name=\"searchValue\" value=\"\" >\r\n");
+      out.write("                <input type=\"submit\" class=\"btn btn-primary\" value=\"Find Ticket Details\" name=\"searchButton\" />\r\n");
+      out.write("            </form><br>\r\n");
+      out.write("               <form class=\"form-inline\" name=\"searchForm\" action=\"SearchTextController\">\r\n");
+      out.write("                Enter Province :<input type=\"text\" class=\"form-control\"  name=\"searchValue\" value=\"\" >\r\n");
+      out.write("                <input type=\"submit\" class=\"btn btn-primary\"  value=\"Find Provice\" name=\"searchButton\" />\r\n");
+      out.write("            </form>\r\n");
+      out.write("            <br>\r\n");
       out.write("            ");
 
                 try {
@@ -77,49 +77,49 @@ public final class TicketFirstPage_jsp extends org.apache.jasper.runtime.HttpJsp
 
                     if (acc != null) {
             
-      out.write("\n");
+      out.write("\r\n");
       out.write("            <table class=\"table table-bordered\" border=\"1\"> ");
  //border="1" 
-      out.write("\n");
-      out.write("                <tbody>\n");
-      out.write("                    <tr>\n");
-      out.write("                        <td class=\"success\">Ticket Number</td>\n");
+      out.write("\r\n");
+      out.write("                <tbody>\r\n");
+      out.write("                    <tr>\r\n");
+      out.write("                        <td class=\"success\">Ticket Number</td>\r\n");
       out.write("                        <td class=\"success\">");
  out.println(acc.getTicketId()); 
-      out.write("</td>\n");
-      out.write("                    </tr>\n");
-      out.write("                    <tr>\n");
-      out.write("                        <td>Date Purchase</td>\n");
+      out.write("</td>\r\n");
+      out.write("                    </tr>\r\n");
+      out.write("                    <tr>\r\n");
+      out.write("                        <td>Date Purchase</td>\r\n");
       out.write("                        <td>");
  out.println(acc.getDateBuyTicket()); 
-      out.write("</td>\n");
-      out.write("                    </tr>\n");
-      out.write("                    <tr>\n");
-      out.write("                        <td>Origin</td>\n");
+      out.write("</td>\r\n");
+      out.write("                    </tr>\r\n");
+      out.write("                    <tr>\r\n");
+      out.write("                        <td>Origin</td>\r\n");
       out.write("                        <td>");
  out.println(acc.getOrigin()); 
-      out.write("</td>\n");
-      out.write("                    </tr>\n");
-      out.write("                    <tr>\n");
-      out.write("                        <td>Destination</td>\n");
+      out.write("</td>\r\n");
+      out.write("                    </tr>\r\n");
+      out.write("                    <tr>\r\n");
+      out.write("                        <td>Destination</td>\r\n");
       out.write("                        <td>");
  out.println(acc.getDestination()); 
-      out.write("</td>\n");
-      out.write("                    </tr>\n");
-      out.write("                    <tr>\n");
-      out.write("                        <td>Number of Passenger</td>\n");
+      out.write("</td>\r\n");
+      out.write("                    </tr>\r\n");
+      out.write("                    <tr>\r\n");
+      out.write("                        <td>Number of Passenger</td>\r\n");
       out.write("                        <td>");
  out.println(acc.getNumPsg()); 
-      out.write("</td>\n");
-      out.write("                    </tr>\n");
-      out.write("                    <tr class=\"danger\">\n");
-      out.write("                        <td>Price All</td>\n");
+      out.write("</td>\r\n");
+      out.write("                    </tr>\r\n");
+      out.write("                    <tr class=\"danger\">\r\n");
+      out.write("                        <td>Price All</td>\r\n");
       out.write("                        <td>");
  out.println(acc.getPricePerSeat()*acc.getNumPsg()); 
-      out.write("</td>\n");
-      out.write("                    </tr>\n");
-      out.write("                </tbody>\n");
-      out.write("            </table>\n");
+      out.write("</td>\r\n");
+      out.write("                    </tr>\r\n");
+      out.write("                </tbody>\r\n");
+      out.write("            </table>\r\n");
       out.write("            ");
 
                     }
@@ -127,9 +127,9 @@ public final class TicketFirstPage_jsp extends org.apache.jasper.runtime.HttpJsp
                     out.println(e.getMessage());
                 }
             
-      out.write("\n");
-      out.write("    </center>\n");
-      out.write("</body>\n");
+      out.write("\r\n");
+      out.write("    </center>\r\n");
+      out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
